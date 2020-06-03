@@ -3,10 +3,14 @@ import Folder from './Folder';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <Folder />
-  );
+class App extends Component {
+  render(){
+    return(
+      <div className="App">      
+        <Folder/>     
+      </div>      
+    );       
+  } 
 }
 
 export default App;
