@@ -27,25 +27,25 @@ class Folder extends Component {
     render(){        
         return this.state.showFiles?
         <div>
-                  <h1>Home &#x1F4C1;</h1>
+                  <h1 class = "App">Home &#x1F4C1;</h1>
                   <ul className="files">
-                      <li>File 1 &#x1F4C4;</li>
-                      <li>File 2 &#x1F4C4;</li>
-                      <li>File 3 &#x1F4C4;</li>
+                      <li>Krabby Patty Secret Formula &#x1F4C4;</li>
+                      <li>Kung Fu Panda Secret Ingredient &#x1F4C4;</li>
+                      <li>Missing Number &#x1F4C4;</li>
                   </ul>
                     <div>
-                    { <button
+                    { <button class="btn btn-success"
                         onClick={() => {this.disappearFiles()}}
-                    >TOGGLE</button>}
+                    >Toggle</button>}
                     
                     </div>
                 </div>:
              <div>
-             <h1>Home &#x1F4C1;</h1>                  
+             <h1 class = "App">Home &#x1F4C1;</h1>                  
                <div>                    
-               { <button
+               { <button class="btn btn-success"
                    onClick={() => {this.disappearFiles()}}
-               >TOGGLE</button>}
+               >Toggle</button>}
                </div>
            </div>       
         }  
