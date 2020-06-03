@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import './App.css';
 
 class Folder extends Component {
@@ -25,10 +24,8 @@ class Folder extends Component {
         
        }
 
-    render(){
-        
+    render(){        
         return this.state.showFiles?
-
         <div>
                   <h1>Home &#x1F4C1;</h1>
                   <ul className="files">
@@ -50,10 +47,9 @@ class Folder extends Component {
                    onClick={() => {this.disappearFiles()}}
                >TOGGLE</button>}
                </div>
-           </div>
-       
-        }
-  
+           </div>       
+        }  
 }
 
 export default Folder;
+
